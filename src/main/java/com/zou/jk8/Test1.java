@@ -45,3 +45,18 @@ public class Test1 {
 2.如果我们在某个接口上声明了FunctionalInterface注解，那么编译器就会按照函数式接口的定义来要求该接口。
 3.如果一个接口只有一个抽象方法，但我们并没有给该接口声明FunctionalInterface注解，那么编译器依旧会将该接口看做是函数式接口。
  */
+
+
+/*
+
+默认方法：在接口里面的方法可以有实现。
+
+forEach： 底层还是使用增强的for循环来实现的
+ default void forEach(Consumer<? super T> action) {
+        Objects.requireNonNull(action);
+        for (T t : this) {
+            action.accept(t);
+        }
+    }
+
+ */

@@ -34,6 +34,12 @@ public class Test1 {
 
         list.forEach(integer -> System.out.println(integer) );
 
+
+        System.out.println("************");
+
+        //通过方法引用创建函数式接口的实例
+        list.forEach(System.out :: println);
+
     }
 }
 
